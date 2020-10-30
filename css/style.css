@@ -1,23 +1,38 @@
 /* GENERAL */
 
 body {
-    background-color: beige;
+    
     text-align: left;
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
     line-height: 1;
+    box-sizing: border-box;
 }
 
 html * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 	padding: 0;
-	border: 0;
+    border: 0;
+    text-decoration: none;
 }
 
 ul {
 	list-style: none;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+a:link, a:visited {
+    color: white;
+}
+
+a:hover, a:active{
+
 }
 
 .row {
@@ -35,20 +50,34 @@ ul {
     flex: 1;
 }
 
+.content-card {
+    background-color: white;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
+
+}
+
 /* PAGE CONTAINER GRID */
 .page-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: rgb(242, 240, 240);
+    padding: 1rem;
 }
 
 /* HEADER */
 
 .header-container {
     background-color: cadetblue;
+    color: white;
 }
 
 .logo-container {
     width: 3rem;
+    padding: .5rem;
 }
 
 .logo-container img {
@@ -56,30 +85,89 @@ ul {
 }
 
 .menu-container {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     margin-left: auto;
+}
+
+.menu-item {
+    color: white;
+}
+
+.menu-item a {
+    padding: 1.35rem 0.5rem;
+
+}
+
+.menu-item a:hover {
+    background-color: #86d1d3;
 }
 
 /* MAIN CONTENT */
 .content {
-    background-color: thistle;
+
+}
+
+.about-container {
+    height: calc(100% - 6rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .about-img-container {
     text-align: center;
+    padding: 1rem;
 }
 
+.about {
+    line-height: 1.4rem;
+}
+.freedom-quote {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: lavender;
+    border-radius: 5px;
+}
+
+.quote-author {
+    font-size: .7rem;
+}
 /* ASIDE */
 .aside-container {
-    background-color: tomato;
+    line-height: .9rem;
+    font-size: .85rem;
+}
+.aside-container > * {
+    padding: .4rem;
+}
+.requirements-list {
+    list-style-type: square;
+    list-style-position: inside;
 }
 /* FOOTER */
 
 .footer-container {
-    background-color: aqua;
+    background-color: cadetblue;
+    height: 37px;
 }
 
+.copyright {
+    padding-left: 2rem;
+    font-size: .75rem;
+    color: lavender;
+}
 .footer-items-container {
     margin-left: auto;
     width: unset;
+}
+
+.footer-item a {
+    padding: 0.5rem 0.5rem;
+}
+
+.footer-items-container:last-child{
+    padding-right: 2rem;
+}
+
+.footer-item:hover {
+    transform: scale(1.1);
 }
