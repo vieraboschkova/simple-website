@@ -6,7 +6,7 @@
         <title>Simple Website</title>
         <meta name="description" content="A simple website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="./assets/favicon.ico">
     </head>
 
@@ -14,13 +14,13 @@
     <body>
 
     <!-- HEADER SECTION -->
-    <header>
+    <header class="header-container row">
         <div class="logo-container">
-            <img src="#" alt="logo">
+            <img src="./assets/logo.png" alt="logo">
         </div>
         <h1>Hello World</h1>
         <nav class="menu-container">
-            <ul>
+            <ul class="row">
                 <li class="menu-item">
                     <a href="index.html">Main Page</a>
                 </li>
@@ -40,6 +40,7 @@
         </nav>
     </header>
 
+    <div class="page-container">
     <!-- MAIN CONTENT SECTION -->
     <div class="content">
         <section class="about-container">
@@ -73,46 +74,10 @@
                 </blockquote>
             </div>
         </section>
-        <section class="travels-container">
-            <h2>Travels</h2>
-                <div class="travel-item">
-                    <div class="travel-img-container">
-                        <img src="#" alt="">
-                    </div>
-                    <article>
-                        <h3>Porto</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi architecto explicabo ab, debitis perspiciatis at cumque autem impedit, nihil, recusandae doloremque libero. Cum nesciunt harum maiores molestiae id. Asperiores, cum!
-
-                        </p>
-                    </article>
-                </div>
-                <div class="travel-item">
-                    <div class="travel-img-container">
-                        <img src="#" alt="">
-                    </div>
-                    <article>
-                        <h3>Porto</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi architecto explicabo ab, debitis perspiciatis at cumque autem impedit, nihil, recusandae doloremque libero. Cum nesciunt harum maiores molestiae id. Asperiores, cum!
-                            
-                        </p>
-                    </article>
-                </div>
-                <div class="travel-item">
-                    <div class="travel-img-container">
-                        <img src="#" alt="">
-                    </div>
-                    <article>
-                        <h3>Porto</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi architecto explicabo ab, debitis perspiciatis at cumque autem impedit, nihil, recusandae doloremque libero. Cum nesciunt harum maiores molestiae id. Asperiores, cum!
-                            
-                        </p>
-                    </article>
-                </div>
-        </section>
     </div>
 
     <!-- ASIDE SECTION -->
-    <aside>
+    <aside class="aside-container">
         <h3>Build a Simple Website Task</h3>
         <p>Your task is to implement the simple webpage according to functional
             requirements and your best knowledge.
@@ -126,8 +91,8 @@ create one at https://github.com/.
 deliver a solution. When the task is finished please send a github link as a reply.
         </p>
 
-        <p>
-            There are some requirements you should fulfill:
+        <div>
+            <p>There are some requirements you should fulfill:</p>
             <ul>
                 <li>The page should contain at least 4 subpages.</li>
                 <li>Its html should be W3C valid.</li>
@@ -141,15 +106,15 @@ deliver a solution. When the task is finished please send a github link as a rep
                 <li>DO NOT use any CSS frameworks (e.g. Bootstrap)</li>
                 <li>DO NOT use any JavaScript frameworks (e.g. jQuery, React)</li>
             </ul>
-        </p>
+        </div>
     </aside>
-
+    </div>
     <!-- FOOTER SECTION -->
-    <footer class="footer-container">
+    <footer class="footer-container row">
         <p>
             © 2020 vieraboschkova
         </p>
-        <ul class="footer-items-container">
+        <ul class="footer-items-container row">
             <li>
                 <a href="#">Call me</a>
             </li>

@@ -1,0 +1,85 @@
+/* GENERAL */
+
+body {
+    background-color: beige;
+    text-align: left;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    line-height: 1;
+}
+
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+/* PAGE CONTAINER GRID */
+.page-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* HEADER */
+
+.header-container {
+    background-color: cadetblue;
+}
+
+.logo-container {
+    width: 3rem;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.menu-container {
+    background-color: antiquewhite;
+    margin-left: auto;
+}
+
+/* MAIN CONTENT */
+.content {
+    background-color: thistle;
+}
+
+.about-img-container {
+    text-align: center;
+}
+
+/* ASIDE */
+.aside-container {
+    background-color: tomato;
+}
+/* FOOTER */
+
+.footer-container {
+    background-color: aqua;
+}
+
+.footer-items-container {
+    margin-left: auto;
+    width: unset;
+}
