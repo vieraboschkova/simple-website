@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD SECTION -->
+    <head>
+        <meta charset="utf-8">
+        <title>Goiabada</title>
+        <meta name="description" content="A simple website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./assets/favicon.ico">
+    </head>
+
+    <!-- BODY SECTION -->
+    <body class="column">
+
+    <!-- HEADER SECTION -->
+    <header class="header-container row">
+        <div class="logo-container">
+            <img src="./assets/logo.png" alt="logo">
+        </div>
+        <h1>Goiabada International</h1>
+        <nav class="menu-container">
+            <ul class="row">
+                <li class="menu-item">
+                    <a href="index.html">Main</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Travels</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Languages</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Writing</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <!-- MAIN CONTENT SECTION -->
+        <div class="content">
+            <section class="contact-container content-card">
+                <h3>Use the contact form to get in touch with me!</h3>
+                <form class="contact-form">
+                    <ul class="contact-form-list">
+                        <li class="contact-form-input">
+                            <label for="name">Enter your name: </label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </li>
+                        <li class="contact-form-input">
+                            <label for="email">Enter your email: </label>
+                            <input type="email" name="email" id="email" placeholder="Give your email" required>
+                        </li>
+                        <li class="contact-form-text">
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="message" placeholder="Share your ideas with me"></textarea>
+                        </li>
+                        <li class="contact-form-button">
+                            <button type="submit" disabled>SEND</button>
+                        </li>
+                    </ul> 
+                </form>
+            </section>
+        </div>
+
+        
+        <!-- ASIDE SECTION -->
+        <aside class="aside-container content-card">
+            <h3>Why did I create this simple website? To learn of COURSE!</h3>
+        </aside>
+    </div>
+    <!-- FOOTER SECTION -->
+    <footer class="footer-container row">
+        <p class="copyright">
+            © 2020 VieraBoschkova
+        </p>
+        <ul class="footer-items-container row">
+            <li class="footer-item">
+                <a href="#">Call me</a>
+            </li>
+            <li class="footer-item">
+                <a href="mailto:vieraboschkova@gmail.com">Mail me</a>
+            </li>
+            <li class="footer-item">
+                <a href="#">Fb me</a>
+            </li>
+            <li class="footer-item">
+                <a href="#">Link me</a>
+            </li>
+            <li class="footer-item">
+                <a href="#">Git me</a>
+            </li>
+            <li class="footer-item">
+                <a href="#">TOP ↑</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script> 
+  </body>
+
+</html>

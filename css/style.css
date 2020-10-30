@@ -1,13 +1,15 @@
 /* GENERAL */
 
 body {
-    
+    background-color: rgb(242, 240, 240);
+
     text-align: left;
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
     line-height: 1;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 html * {
@@ -64,7 +66,6 @@ a:hover, a:active{
 .page-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: rgb(242, 240, 240);
     padding: 1rem;
 }
 
@@ -136,18 +137,21 @@ a:hover, a:active{
     line-height: .9rem;
     font-size: .85rem;
 }
+
 .aside-container > * {
     padding: .4rem;
 }
+
 .requirements-list {
     list-style-type: square;
     list-style-position: inside;
 }
-/* FOOTER */
 
+/* FOOTER */
 .footer-container {
     background-color: cadetblue;
     height: 37px;
+    margin-top: auto;
 }
 
 .copyright {
@@ -170,4 +174,32 @@ a:hover, a:active{
 
 .footer-item:hover {
     transform: scale(1.1);
+}
+
+/* CONTACT PAGE ******************************* */
+
+/* CONTACT FORM */
+
+.contact-container {
+
+}
+
+.contact-form {
+
+}
+
+.contact-form-list {
+
+}
+
+.contact-form-input {
+
+}
+
+.contact-form-text {
+
+}
+
+.contact-form-button {
+
 }
