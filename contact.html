@@ -18,7 +18,7 @@
         <div class="logo-container">
             <img src="./assets/logo.png" alt="logo">
         </div>
-        <h1>Goiabada International</h1>
+        <h1>Goiabada Int.</h1>
         <nav class="menu-container">
             <ul class="row">
                 <li class="menu-item">
@@ -44,35 +44,58 @@
         <!-- MAIN CONTENT SECTION -->
         <div class="content">
             <section class="contact-container content-card">
-                <h3>Use the contact form to get in touch with me!</h3>
+                <div class="contact-description">
+                    <h3 class="contact-heading">Let's get in touch!</h3>
+                    <p>If you have any questions, doubts, took a perfect picture of guava, or just had a crazy idea you want to share with me, do not hesitate, leave me a message!</p>
+                </div>
                 <form class="contact-form">
-                    <ul class="contact-form-list">
-                        <li class="contact-form-input">
-                            <label for="name">Enter your name: </label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                        </li>
-                        <li class="contact-form-input">
-                            <label for="email">Enter your email: </label>
-                            <input type="email" name="email" id="email" placeholder="Give your email" required>
-                        </li>
-                        <li class="contact-form-text">
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="message" placeholder="Share your ideas with me"></textarea>
-                        </li>
-                        <li class="contact-form-button">
-                            <button type="submit" disabled>SEND</button>
-                        </li>
-                    </ul> 
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <ul class="contact-form-list">
+                            <li class="contact-form-item">
+                                <label for="name">Enter your name: </label>
+                                <input type="text" class="contact-form-input" name="name" id="name" placeholder="Enter your name" required>
+                            </li>
+                            <li class="contact-form-item">
+                                <label for="email">Enter your email: </label>
+                                <input type="email"  class="contact-form-input"name="email" id="email" placeholder="Give your email" required>
+                            </li>
+                            <li class="contact-form-item">
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" class="contact-form-text"name="message" placeholder="Share your ideas with me"></textarea>
+                            </li>
+                            <li class="contact-form-item">
+                                <button type="submit" class="contact-form-button" disabled>SEND</button>
+                            </li>
+                        </ul> 
+                    </fieldset>
                 </form>
             </section>
         </div>
-
         
         <!-- ASIDE SECTION -->
         <aside class="aside-container content-card">
-            <h3>Why did I create this simple website? To learn of COURSE!</h3>
+            <h3>Why did I create this simple website?</h3>
+            <h4> To learn of COURSE!</h4>
+            <p>When I was 18 I had to make a choice, a choice no 18-year old person should be expected to take:
+                decide what was I going to do with my future. I had two visions of it in my head. One path was leading to
+                Faculty of Architecture, the other one to IT. Both at a technical university of course, as I always cosidered myself 
+                a mathematician with a special inclination for Humanities, Arts.
+            </p>
+            <br>
+            <p>I chose Architecture.</p>
+            <br>
+            <p>
+                Today, 18 years later, I choose a different path. I want to become a Front-End Developer.
+                A perfect combination of the logical side of me with the architectural background that I have. Ahead of me,
+                many years of studying, successes and failures.
+            </p>
+            <br>
+            <p>A Brand New Future.</p>
         </aside>
     </div>
+    <!-- END OF MAIN PAGE CONTENT -->
+
     <!-- FOOTER SECTION -->
     <footer class="footer-container row">
         <p class="copyright">
@@ -80,19 +103,19 @@
         </p>
         <ul class="footer-items-container row">
             <li class="footer-item">
-                <a href="#">Call me</a>
+                <a href="tel:+48000000000">Call me</a>
             </li>
             <li class="footer-item">
                 <a href="mailto:vieraboschkova@gmail.com">Mail me</a>
             </li>
             <li class="footer-item">
-                <a href="#">Fb me</a>
+                <a href="https://www.facebook.com/jagringa">Fb me</a>
             </li>
             <li class="footer-item">
-                <a href="#">Link me</a>
+                <a href="https://www.linkedin.com/in/boszkoweronika/">Link me</a>
             </li>
             <li class="footer-item">
-                <a href="#">Git me</a>
+                <a href="https://github.com/vieraboschkova">Git me</a>
             </li>
             <li class="footer-item">
                 <a href="#">TOP ↑</a>

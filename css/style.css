@@ -55,7 +55,7 @@ a:hover, a:active{
 .content-card {
     background-color: white;
     margin: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid lightgray;
     border-radius: 6px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
@@ -78,7 +78,7 @@ a:hover, a:active{
 
 .logo-container {
     width: 3rem;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 .logo-container img {
@@ -94,8 +94,11 @@ a:hover, a:active{
     color: white;
 }
 
+.menu-item:last-of-type {
+    margin-right: 2rem;
+}
 .menu-item a {
-    padding: 1.35rem 0.5rem;
+    padding: 1.855rem 0.5rem;
 
 }
 
@@ -109,11 +112,15 @@ a:hover, a:active{
 }
 
 .about-container {
-    height: calc(100% - 6rem);
+    height: calc(100% - 8.125rem);
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
+
+.about-heading {
+    line-height: 2rem;
+}
 .about-img-container {
     text-align: center;
     padding: 1rem;
@@ -147,10 +154,14 @@ a:hover, a:active{
     list-style-position: inside;
 }
 
+.requirements-list li {
+    padding-top: .3rem;
+}
+
 /* FOOTER */
 .footer-container {
     background-color: cadetblue;
-    height: 37px;
+    height: 45px;
     margin-top: auto;
 }
 
@@ -181,25 +192,70 @@ a:hover, a:active{
 /* CONTACT FORM */
 
 .contact-container {
+    height: calc(100% - 8.125rem);
+}
+
+.contact-heading {
+    margin: 1rem auto;
 
 }
 
+.contact-description {
+    max-width: 40rem;
+    margin: 0 auto;
+    /* text-align: center; */
+}
 .contact-form {
+  margin: 2rem auto;
+  width: 40rem;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: cadetblue;
+}
 
+.contact-form legend {
+    font-weight: 800;
+}
+.contact-form label {
+    font-weight: 600;
 }
 
 .contact-form-list {
 
 }
 
-.contact-form-input {
+.contact-form-list label {
+    display: inline-block;
+    width: 10rem;
+    text-align: right;
+}
 
+.contact-form-item {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.contact-form-item:last-of-type {
+    text-align: center;
+}
+
+.contact-form-input {
+    width: 20rem;
 }
 
 .contact-form-text {
-
+    width: 20rem;
+    border: 1px solid lightgray;
+    vertical-align: top;
+    height: 5em;
 }
 
 .contact-form-button {
-
+    padding: .5rem 2rem;
+    background-color:rgb(242, 240, 240);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: rgb(69, 113, 114);
+    border-radius: 5px;
 }
