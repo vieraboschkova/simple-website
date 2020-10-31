@@ -2,7 +2,6 @@
 
 body {
     background-color: rgb(242, 240, 240);
-
     text-align: left;
 	font-size: 100%;
 	font: inherit;
@@ -12,6 +11,7 @@ body {
     min-height: 100vh;
 }
 
+/* RESET DEFAULT */
 html * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -24,6 +24,7 @@ ul {
 	list-style: none;
 }
 
+/* DEFINE GENERAL STYLES */
 blockquote {
     font-style: italic;
     line-height: 1.5rem;
@@ -294,7 +295,7 @@ a:hover, a:active{
     width: 100%;
 }
 
-.city-name {
+.item-title {
     margin: .5rem 0;
 }
 
@@ -313,4 +314,39 @@ a:hover, a:active{
     font-size: .75rem;
     color: lightslategray;
     font-style: italic;
+}
+
+/* WRITING PAGE ******************************* */
+
+/* WRITING CONTAINER */
+
+.writing-container {
+    height: calc(100% - 8.125rem);
+
+} 
+
+.writing-heading {
+    line-height: 2rem;
+}
+
+.writing-img-container {
+    height: 200px;
+}
+
+.writing-img-container img {
+    overflow: hidden;
+}
+
+.writing-items-container{
+    text-align: center;
+}
+
+.writing-item {
+    
+}
+
+.writing-item article {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
 }
