@@ -259,3 +259,58 @@ a:hover, a:active{
     color: rgb(69, 113, 114);
     border-radius: 5px;
 }
+
+/* TRAVELS PAGE ******************************* */
+
+/* TRAVELS CONTAINER */
+.travels-container {
+    height: calc(100% - 8.125rem);
+}  
+
+.travels-heading {
+    line-height: 2rem;
+}
+
+.travel-items-container {
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: stretch;
+    
+}
+
+.travel-item {
+    background-color: cadetblue;
+    padding: .5rem;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
+    max-width: 28%;
+}
+
+.travel-img-container {
+
+}
+
+.travel-img-container img {
+    width: 100%;
+}
+
+.city-name {
+    margin: .5rem 0;
+}
+
+.travel-more-link {
+    text-align: center;
+    margin: 2rem auto;
+}
+.travel-more-link a {
+    background-color: #f48da1;
+    height: 2rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.photos-copyright {
+    font-size: .75rem;
+    color: lightslategray;
+    font-style: italic;
+}
