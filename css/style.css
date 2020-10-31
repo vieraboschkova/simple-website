@@ -3,12 +3,14 @@
 body {
     background-color: rgb(242, 240, 240);
     text-align: left;
+    font-size: 16px;
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
     line-height: 1;
     box-sizing: border-box;
     min-height: 100vh;
+    color: rgb(68, 68, 68);
 }
 
 /* RESET DEFAULT */
@@ -18,6 +20,7 @@ html * {
 	padding: 0;
     border: 0;
     text-decoration: none;
+    
 }
 
 ul {
@@ -93,6 +96,7 @@ a:hover, a:active{
 
 .menu-item {
     color: white;
+    font-weight: 600;
 }
 
 .menu-item:last-of-type {
@@ -126,6 +130,9 @@ a:hover, a:active{
     text-align: center;
     padding: 1rem;
 }
+.about-img-container img{
+    width: unset;
+}
 
 .about {
     line-height: 1.4rem;
@@ -142,8 +149,10 @@ a:hover, a:active{
 }
 /* ASIDE */
 .aside-container {
-    line-height: .9rem;
-    font-size: .85rem;
+    line-height: 1rem;
+    font-size: .8rem;
+    height: max-content;
+    padding: 1rem;
 }
 
 .aside-container > * {
@@ -170,10 +179,15 @@ a:hover, a:active{
     padding-left: 2rem;
     font-size: .75rem;
     color: lavender;
+    display: block;
 }
 .footer-items-container {
     margin-left: auto;
     width: unset;
+}
+
+.footer-item {
+    font-weight: 600;
 }
 
 .footer-item a {
@@ -204,23 +218,29 @@ a:hover, a:active{
 .contact-description {
     max-width: 40rem;
     margin: 0 auto;
-    /* text-align: center; */
+    line-height: 1.25rem;
 }
+
 .contact-form {
   margin: 2rem auto;
-  width: 40rem;
+  max-width: 40rem;
   padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
+  border-radius: 6px;
   background-color: cadetblue;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
 }
 
 .contact-form legend {
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
 }
 .contact-form label {
     font-weight: 600;
 }
+
 
 .contact-form-list {
 
@@ -243,22 +263,39 @@ a:hover, a:active{
 
 .contact-form-input {
     width: 20rem;
+    background-color: #ffafbf;
+}
+
+.contact-form-input::placeholder {
+
+    padding: .1rem .2rem;
+    font-size: .75rem;
 }
 
 .contact-form-text {
     width: 20rem;
-    border: 1px solid lightgray;
     vertical-align: top;
     height: 5em;
+    background-color: #ffafbf;
+}
+
+.contact-form-text::placeholder {
+    padding: .1rem .2rem;
+    font-size: .75rem;
 }
 
 .contact-form-button {
+    margin-top: 1rem;
     padding: .5rem 2rem;
-    background-color:rgb(242, 240, 240);
+    background-color: #ffafbf;
     font-size: 1.1rem;
     font-weight: 800;
     color: rgb(69, 113, 114);
     border-radius: 5px;
+}
+
+.contact-aside-container {
+    height: calc(100% - 6rem);
 }
 
 /* TRAVELS PAGE ******************************* */
@@ -266,17 +303,24 @@ a:hover, a:active{
 /* TRAVELS CONTAINER */
 .travels-container {
     height: calc(100% - 8.125rem);
+
 }  
 
 .travels-heading {
     line-height: 2rem;
+    
 }
 
 .travel-items-container {
     justify-content: space-between;
     margin: 2rem 0;
     align-items: stretch;
-    
+    color: white;
+    line-height: 1.1rem
+}
+
+.travel-items-container p {
+    font-size: .9rem;
 }
 
 .travel-item {
@@ -285,6 +329,7 @@ a:hover, a:active{
     border-radius: 3px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
     max-width: 28%;
+    min-width: 180px;
 }
 
 .travel-img-container {
@@ -322,31 +367,186 @@ a:hover, a:active{
 
 .writing-container {
     height: calc(100% - 8.125rem);
-
 } 
 
 .writing-heading {
     line-height: 2rem;
 }
-
 .writing-img-container {
-    height: 200px;
+    overflow: hidden;
+    flex: 3;
 }
 
 .writing-img-container img {
-    overflow: hidden;
+    border-radius: 6px 0 0 6px;
+    width: 100%;
+    display:block;
 }
 
-.writing-items-container{
+.writing-items-container {
     text-align: center;
 }
 
 .writing-item {
-    
+    /* background-color: cadetblue; */
+    width: unset;
+    flex-wrap: nowrap;
+    padding: 0;
+    border-width: 0;
+    align-items: flex-start;
 }
 
-.writing-item article {
+.writing-overview {
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
+    flex: 5;
+    padding: 1rem;
+    /* color: white; */
+}
+
+.writing-overview p {
+    font-size: .9rem;
+    line-height: 1.1rem;
+}
+
+.writing-more-link {
+    background-color: #f48da1;
+    height: 1rem;
+    padding: .25rem;
+    border-radius: 5px;
+    font-size: .8rem;
+    width: 75px;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.writing-container .photos-copyright {
+    margin-left: 2rem;
+}
+
+/* MEDIA QUERIES ******************************* */
+
+@media (max-width: 1060px) {
+    .page-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .writing-page {
+        flex-direction: column-reverse;
+    }
+    .travel-items-container p {
+        font-size: .8rem;
+    }
+    .writing-overview {
+        flex: 3;
+    }
+    .writing-overview p{
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .row {
+        width: unset;
+    }
+    .header-container {
+        flex-direction: row-reverse;
+        padding: 0 2rem;
+    }
+    .header-container h1 {
+        font-size: 1.75rem;
+        margin-right: auto;
+        padding-left: .3rem;
+    }
+    .logo-container {
+        padding: 1.75rem 0 0 1rem;
+    }
+    .menu-container {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .menu-item {
+        font-size: .9rem;
+    }
+    .menu-item a {
+        padding: 0.8rem .35rem;
+    }
+    .content-card {
+        margin: 1rem;
+        padding-top: 1rem;
+    }
+    .about-heading {
+        font-size: .85rem;
+        line-height: 1.3rem;
+    }
+    .about-img-container img{
+        width: 100%;
+    }
+    .about p {
+        font-size: .9rem;
+    }
+    .travel-items-container {
+        flex-direction: column;
+    }
+    .travel-item {
+        max-width: unset;
+        margin-bottom: 2rem;
+        padding: unset;
+    }
+    .travel-img-container img {
+        border-radius: 3px 3px 0 0;
+        display: block;
+    }
+    .travel-item article {
+        margin: auto 1rem;
+    }
+    .writing-item {
+        flex-direction: column;
+    }
+
+    .writing-img-container img{
+        border-radius: 6px 6px 0 0;
+    }
+
+    .contact-description p {
+        font-size: .8rem;
+    }
+    .contact-form legend{
+        padding: unset;
+        font-size: 1rem;
+    }
+    .contact-form-input, .contact-form-text {
+        width: 100%;
+    }
+    .contact-form-list label {
+        text-align: unset;
+        margin-bottom: .5rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .footer-items-container {
+        margin: unset;
+        padding-top: 1rem;
+    }
+
+    .copyright {
+        padding-left: unset;
+    }
+
+    .footer-item {
+        margin-right: .5rem;
+        font-size: .9rem;
+    }
+    .footer-item a {
+        padding: .5rem 0;
+    }
+}
+
+@media (max-width: 440px) {
+
 }
