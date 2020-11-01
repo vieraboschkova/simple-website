@@ -245,6 +245,7 @@ th, td {
 }
 .contact-form label {
     font-weight: 600;
+    color: white;
 }
 
 
@@ -269,7 +270,7 @@ th, td {
 
 .contact-form-input {
     width: 20rem;
-    background-color: #ffafbf;
+    background-color:#fde3f9;
 }
 
 .contact-form-input::placeholder {
@@ -282,7 +283,7 @@ th, td {
     width: 20rem;
     vertical-align: top;
     height: 5em;
-    background-color: #ffafbf;
+    background-color: #fde3f9;
 }
 
 .contact-form-text::placeholder {
@@ -293,7 +294,7 @@ th, td {
 .contact-form-button {
     margin-top: 1rem;
     padding: .5rem 2rem;
-    background-color: #ffafbf;
+    background-color: #fde3f9;
     font-size: 1.1rem;
     font-weight: 800;
     color: rgb(69, 113, 114);
@@ -492,7 +493,7 @@ th, td {
         flex-direction: column;
     }
     .writing-page {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .travel-items-container p {
         font-size: .8rem;
@@ -507,6 +508,9 @@ th, td {
 }
 
 @media (max-width: 760px) {
+    th, td {
+        padding: .25rem;
+    }
     .row {
         width: unset;
     }
@@ -536,16 +540,31 @@ th, td {
         margin: 1rem;
         padding-top: 1rem;
     }
-    .about-heading {
+    .about-heading, .travels-heading, .language-heading, .writing-heading {
         font-size: .85rem;
-        line-height: 1.3rem;
+        line-height: 1.5rem;
     }
+        
     .about-img-container img{
         width: 100%;
     }
     .about p {
         font-size: .9rem;
     }
+    .writing-heading.writing-item {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .writing-item {
+        flex-direction: column;
+        padding-top: unset;
+    }
+
+    .writing-img-container img{
+        border-radius: 6px 6px 0 0;
+    }
+
     .travel-items-container {
         flex-direction: column;
     }
@@ -561,13 +580,7 @@ th, td {
     .travel-item article {
         margin: auto 1rem;
     }
-    .writing-item {
-        flex-direction: column;
-    }
 
-    .writing-img-container img{
-        border-radius: 6px 6px 0 0;
-    }
 
     .contact-description p {
         font-size: .8rem;
@@ -583,6 +596,50 @@ th, td {
         text-align: unset;
         margin-bottom: .5rem;
     }
+    .language-table th {
+        background-color: cadetblue;
+        color: white;
+        margin-top: 1rem;
+    }
+    .language-table-container table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+    .language-table-container thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+    }
+    
+    .language-table-body td { 
+		border: none;
+		border-bottom: 1px solid white; 
+		position: relative;
+		padding-left: 50%; 
+    }
+    
+    .language-table-body td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+    }
+    
+	td:nth-of-type(1):before { content: "Polish"; }
+	td:nth-of-type(2):before { content: "German"; }
+	td:nth-of-type(3):before { content: "French"; }
+	td:nth-of-type(4):before { content: "Portuguese"; }
+	td:nth-of-type(5):before { content: "Spanish"; }
+    
+    .language-table caption {
+        caption-side: unset;
+        width: calc(100vw - 2rem);
+        text-align: left;
+        font-size: .875rem;
+        padding-top: unset;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: flex-start;
@@ -604,8 +661,79 @@ th, td {
     .footer-item a {
         padding: .5rem 0;
     }
+    .footer-items-container:last-child {
+        padding-right:unset
+    }
 }
 
 @media (max-width: 440px) {
+    body {
+        background-color: cadetblue;
+    }
+    .page-container {
+        padding: 0;
+    }
+    .content-card {
+        margin: 0;
+        padding: 1rem;
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset
+    }
+    .header-container {
+        padding: 0;
+        margin: 1rem;
+        background-image: url("../assets/logo.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+    .menu-container {
+        padding-bottom: unset;
+    }
+    .menu-container ul {
+        flex-direction: column;
+        align-items: unset;
+        padding-bottom: unset;
+    }
+    .menu-item {
+        padding: .2rem 0;
+    }
+    .menu-item:first-of-type {
+        margin-top: .5rem;
+    }
+    .menu-item a {
+        padding: 0 .4rem;
+        font-size: 1rem;
+    }
+    .menu-item a:hover {
+        background-color: unset;
+    }
+    .logo-container {
+        display: none;
+    }
+    .writing-overview {
+        background-color: cadetblue;
+        color: white;
+    }
+    .writing-container .photos-copyright {
+        background-color: white;
+        margin-left: 0;
+        padding: 1rem;
+    }
+    .writing-heading .writing-overview {
+        background-color: white;
+        color: rgb(68, 68, 68);
+    }
+    .footer-container {
+        height: unset;
+    }
+    .footer-items-container {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .footer-item {
+        padding: .2rem 0;
+    }
 
 }
