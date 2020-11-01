@@ -213,7 +213,7 @@ th, td {
 /* CONTACT FORM */
 
 .contact-container {
-    height: calc(100% - 8.125rem);
+    height: calc(100% - 8rem);
 }
 
 .contact-heading {
@@ -445,7 +445,7 @@ th, td {
     letter-spacing: 1px;
 }
 .language-container {
-
+    height: calc(100% - 8rem);
 }
 
 .language-heading {
@@ -610,14 +610,14 @@ th, td {
 		left: -9999px;
     }
     
-    .language-table-body td { 
+    .language-table-body td, th { 
 		border: none;
 		border-bottom: 1px solid white; 
 		position: relative;
 		padding-left: 50%; 
     }
     
-    .language-table-body td:before { 
+    .language-table-body td:before, th::before { 
 		position: absolute;
 		top: 6px;
 		left: 6px;
@@ -625,12 +625,13 @@ th, td {
 		padding-right: 10px; 
 		white-space: nowrap;
     }
-    
-	td:nth-of-type(1):before { content: "Polish"; }
-	td:nth-of-type(2):before { content: "German"; }
-	td:nth-of-type(3):before { content: "French"; }
-	td:nth-of-type(4):before { content: "Portuguese"; }
-	td:nth-of-type(5):before { content: "Spanish"; }
+
+    .language-table-body th:before { content: "English"; }
+	.language-table-body td:nth-of-type(1):before { content: "Polish"; }
+	.language-table-body td:nth-of-type(2):before { content: "German"; }
+	.language-table-body td:nth-of-type(3):before { content: "French"; }
+	.language-table-body td:nth-of-type(4):before { content: "Portuguese"; }
+	.language-table-body td:nth-of-type(5):before { content: "Spanish"; }
     
     .language-table caption {
         caption-side: unset;
