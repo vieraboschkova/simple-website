@@ -41,6 +41,10 @@ a:hover, a:active{
 
 }
 
+th, td {
+    padding: 1rem;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -83,10 +87,12 @@ a:hover, a:active{
 .logo-container {
     width: 3rem;
     padding: 1rem;
+    margin-left: 2rem;
 }
 
 .logo-container img {
     width: 100%;
+
 }
 
 .menu-container {
@@ -100,7 +106,7 @@ a:hover, a:active{
 }
 
 .menu-item:last-of-type {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 .menu-item a {
     padding: 1.855rem 0.5rem;
@@ -176,7 +182,7 @@ a:hover, a:active{
 }
 
 .copyright {
-    padding-left: 2rem;
+    padding-left: 3rem;
     font-size: .75rem;
     color: lavender;
     display: block;
@@ -425,6 +431,59 @@ a:hover, a:active{
     margin-left: 2rem;
 }
 
+/* LANGUAGES PAGE ******************************* */
+
+/* LANGUAGES TABLE CONTAINER */
+
+.language-table caption {
+    padding-top: 1rem;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+}
+.language-container {
+
+}
+
+.language-heading {
+    line-height: 2rem;
+}
+
+.language-table-container {
+    margin-top: 1rem;
+}
+
+.language-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.language-table-head {
+    color: white;
+    background-color: cadetblue;
+}
+
+.language-table-header {
+
+}
+.language-table-body {
+    font-size: .875rem;
+}
+.language-table-body tr:nth-child(odd){
+    background-color: #fde3f9;
+}
+
+.language-table-body tr:nth-child(even){
+    background-color: #f4cbe6;
+}
+
+.language-table-body tr:hover {
+    background-color: #f9f0af;
+}
+
 /* MEDIA QUERIES ******************************* */
 
 @media (max-width: 1060px) {
@@ -527,7 +586,7 @@ a:hover, a:active{
     .footer-container {
         flex-direction: column;
         align-items: flex-start;
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
     .footer-items-container {
         margin: unset;
