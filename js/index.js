@@ -42,11 +42,6 @@ function validateName() {
 
     if (nameIsEmpty || hasOnlyWhitespace || !nameIsValid) {
         alertInvalidName();
-    }
-
-    if (nameIsEmpty) {
-        return false;
-    } else if (hasOnlyWhitespace) {
         return false;
     } else {
         return nameIsValid;
@@ -63,11 +58,6 @@ function validateEmail() {
 
     if (emailIsEmpty || hasOnlyWhitespace || !emailIsValid) {
         alertInvalidEmail();
-    }
-
-    if (emailIsEmpty) {
-        return false;
-    } else if (hasOnlyWhitespace) {
         return false;
     } else {
         return emailIsValid;
@@ -75,6 +65,7 @@ function validateEmail() {
 }
 
 function clearForm () {
+    submitButton.disabled = true;
     contactForm.reset();
 }
 
@@ -83,7 +74,6 @@ function validateForm() {
     const emailIsValid = validateEmail();
 
     if (nameIsValid && emailIsValid) {
-        submitButton.disabled = true;
         alert('Contact established!');
         clearForm();
     }
