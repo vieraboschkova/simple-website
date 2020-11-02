@@ -83,6 +83,7 @@ function validateForm() {
     const emailIsValid = validateEmail();
 
     if (nameIsValid && emailIsValid) {
+        submitButton.disabled = true;
         alert('Contact established!');
         clearForm();
     }
