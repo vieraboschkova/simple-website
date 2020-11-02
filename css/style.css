@@ -14,13 +14,13 @@ body {
 }
 
 /* RESET DEFAULT */
+
 html * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 	padding: 0;
     border: 0;
     text-decoration: none;
-    
 }
 
 ul {
@@ -28,17 +28,15 @@ ul {
 }
 
 /* DEFINE GENERAL STYLES */
+
 blockquote {
     font-style: italic;
     line-height: 1.5rem;
     font-size: .9rem;
 }
+
 a:link, a:visited {
-    color: white;
-}
-
-a:hover, a:active{
-
+    color: rgb(255, 255, 255);
 }
 
 th, td {
@@ -61,16 +59,16 @@ th, td {
 }
 
 .content-card {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 2rem;
     padding: 2rem;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(211, 211, 211);
     border-radius: 6px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
-
 }
 
 /* PAGE CONTAINER GRID */
+
 .page-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -80,8 +78,8 @@ th, td {
 /* HEADER */
 
 .header-container {
-    background-color: cadetblue;
-    color: white;
+    background-color: rgb(95, 158, 160);
+    color: rgb(255, 255, 255);
 }
 
 .logo-container {
@@ -92,35 +90,30 @@ th, td {
 
 .logo-container img {
     width: 100%;
-
 }
 
 .menu-container {
-    /* background-color: antiquewhite; */
     margin-left: auto;
 }
 
 .menu-item {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
 .menu-item:last-of-type {
     margin-right: 3rem;
 }
+
 .menu-item a {
     padding: 1.855rem 0.5rem;
-
 }
 
 .menu-item a:hover {
-    background-color: #86d1d3;
+    background-color: rgb(134, 209, 211);
 }
 
 /* MAIN CONTENT */
-.content {
-
-}
 
 .about-container {
     height: calc(100% - 8.125rem);
@@ -128,14 +121,15 @@ th, td {
     padding-right: 2rem;
 }
 
-
 .about-heading {
     line-height: 2rem;
 }
+
 .about-img-container {
     text-align: center;
     padding: 1rem;
 }
+
 .about-img-container img{
     width: unset;
 }
@@ -143,17 +137,20 @@ th, td {
 .about {
     line-height: 1.4rem;
 }
+
 .freedom-quote {
     margin: 2rem 0;
     padding: 1rem;
-    background-color: lavender;
+    background-color: rgb(230, 230, 250);
     border-radius: 5px;
 }
 
 .quote-author {
     font-size: .7rem;
 }
+
 /* ASIDE */
+
 .aside-container {
     line-height: 1rem;
     font-size: .8rem;
@@ -175,8 +172,9 @@ th, td {
 }
 
 /* FOOTER */
+
 .footer-container {
-    background-color: cadetblue;
+    background-color: rgb(95, 158, 160);
     height: 45px;
     margin-top: auto;
 }
@@ -184,9 +182,10 @@ th, td {
 .copyright {
     padding-left: 3rem;
     font-size: .75rem;
-    color: lavender;
+    color: rgb(230, 230, 250);
     display: block;
 }
+
 .footer-items-container {
     margin-left: auto;
     width: unset;
@@ -218,7 +217,6 @@ th, td {
 
 .contact-heading {
     margin: 1rem auto;
-
 }
 
 .contact-description {
@@ -228,12 +226,12 @@ th, td {
 }
 
 .contact-form {
-  margin: 2rem auto;
-  max-width: 40rem;
-  padding: 1em;
-  border-radius: 6px;
-  background-color: cadetblue;
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
+    margin: 2rem auto;
+    max-width: 40rem;
+    padding: 1em;
+    border-radius: 6px;
+    background-color: rgb(95, 158, 160);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
 }
 
 .contact-form legend {
@@ -241,7 +239,7 @@ th, td {
     font-size: 1.4rem;
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .contact-fields-required {
@@ -250,14 +248,10 @@ th, td {
     font-weight: 500;
     line-height: 1.5rem;
 }
+
 .contact-form label {
     font-weight: 600;
-    color: white;
-}
-
-
-.contact-form-list {
-
+    color: rgb(255, 255, 255);
 }
 
 .contact-form-list label {
@@ -277,10 +271,9 @@ th, td {
 
 .contact-form-input {
     width: 20rem;
-    background-color:whitesmoke;
+    background-color:rgb(245, 245, 245);
     padding: .1rem .2rem;
     color: rgb(63, 63, 63);
-
 }
 
 .contact-form-input::placeholder {
@@ -293,7 +286,7 @@ th, td {
     vertical-align: top;
     min-height: 5em;
     line-height: 1em;
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
     color: rgb(63, 63, 63);
     resize: vertical;
 }
@@ -302,32 +295,24 @@ th, td {
     font-size: .75rem;
 }
 
-/* .contact-form-text:valid {
-   background-color: greenyellow;
-}
-
-.contact-form-text:invalid {
-    background-color: lightcoral;
- } */
-
 .contact-form-button {
     margin-top: 1rem;
     padding: .5rem 2rem;
-    background-color: #f48da1;
+    background-color: rgb(244, 141, 161);
     font-size: 1.1rem;
     font-weight: 800;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
 }
 
 .contact-form-button:disabled {
-    background-color: cadetblue;
-    color: whitesmoke;
+    background-color: rgb(95, 158, 160);
+    color: rgb(245, 245, 245);
 }
 
 .contact-form-button:hover:enabled {
-    background-color: whitesmoke;
-    color: #f48da1;
+    background-color: rgb(245, 245, 245);
+    color: rgb(244, 141, 161);
     transform: scale(1.1);
 }
 
@@ -343,21 +328,20 @@ th, td {
 /* TRAVELS PAGE ******************************* */
 
 /* TRAVELS CONTAINER */
+
 .travels-container {
     height: calc(100% - 8.125rem);
-
 }  
 
 .travels-heading {
     line-height: 2rem;
-    
 }
 
 .travel-items-container {
     justify-content: space-between;
     margin: 2rem 0;
     align-items: stretch;
-    color: white;
+    color: rgb(255, 255, 255);
     line-height: 1.1rem
 }
 
@@ -366,16 +350,12 @@ th, td {
 }
 
 .travel-item {
-    background-color: cadetblue;
+    background-color: rgb(95, 158, 160);
     padding: .5rem;
     border-radius: 3px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.2);
     max-width: 28%;
     min-width: 180px;
-}
-
-.travel-img-container {
-
 }
 
 .travel-img-container img {
@@ -390,8 +370,9 @@ th, td {
     text-align: center;
     margin: 2rem auto;
 }
+
 .travel-more-link a {
-    background-color: #f48da1;
+    background-color: rgb(244, 141, 161);
     height: 2rem;
     padding: .5rem 1rem;
     border-radius: 5px;
@@ -435,7 +416,6 @@ th, td {
 }
 
 .writing-item {
-    /* background-color: cadetblue; */
     width: unset;
     flex-wrap: nowrap;
     padding: 0;
@@ -449,7 +429,6 @@ th, td {
     margin: 0 auto;
     flex: 5;
     padding: 1rem;
-    /* color: white; */
 }
 
 .writing-overview p {
@@ -458,7 +437,7 @@ th, td {
 }
 
 .writing-more-link {
-    background-color: #f48da1;
+    background-color: rgb(244, 141, 161);
     height: 1rem;
     padding: .25rem;
     border-radius: 5px;
@@ -481,10 +460,11 @@ th, td {
     padding-top: 1rem;
     font-style: italic;
     caption-side: bottom;
-    color: #666;
+    color: rgb(102, 102, 102);
     text-align: right;
     letter-spacing: 1px;
 }
+
 .language-container {
     height: calc(100% - 8rem);
 }
@@ -504,26 +484,24 @@ th, td {
 }
 
 .language-table-head {
-    color: white;
-    background-color: cadetblue;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 158, 160);
 }
 
-.language-table-header {
-
-}
 .language-table-body {
     font-size: .875rem;
 }
+
 .language-table-body tr:nth-child(odd){
-    background-color: #fde3f9;
+    background-color: rgb(253, 227, 249);
 }
 
 .language-table-body tr:nth-child(even){
-    background-color: #f4cbe6;
+    background-color: rgb(244, 203, 230);
 }
 
 .language-table-body tr:hover {
-    background-color: #f9f0af;
+    background-color: rgb(249, 240, 175);
 }
 
 /* MEDIA QUERIES ******************************* */
@@ -533,15 +511,19 @@ th, td {
         display: flex;
         flex-direction: column;
     }
+
     .writing-page {
         flex-direction: column;
     }
+
     .travel-items-container p {
         font-size: .8rem;
     }
+
     .writing-overview {
         flex: 3;
     }
+
     .writing-overview p{
         font-size: .8rem;
     }
@@ -552,35 +534,44 @@ th, td {
     th, td {
         padding: .25rem;
     }
+
     .row {
         width: unset;
     }
+
     .header-container {
         flex-direction: row-reverse;
         padding: 0 2rem;
     }
+
     .header-container h1 {
         font-size: 1.75rem;
         margin-right: auto;
         padding-left: .3rem;
     }
+
     .logo-container {
         padding: 1.75rem 0 0 1rem;
     }
+
     .menu-container {
         width: 100%;
         padding-bottom: 1rem;
     }
+
     .menu-item {
         font-size: .9rem;
     }
+
     .menu-item a {
         padding: 0.8rem .35rem;
     }
+
     .content-card {
         margin: 1rem;
         padding-top: 1rem;
     }
+
     .about-heading, .travels-heading, .language-heading, .writing-heading {
         font-size: .85rem;
         line-height: 1.5rem;
@@ -589,9 +580,11 @@ th, td {
     .about-img-container img{
         width: 100%;
     }
+
     .about p {
         font-size: .9rem;
     }
+
     .writing-heading.writing-item {
         display: flex;
         flex-direction: column-reverse;
@@ -609,42 +602,50 @@ th, td {
     .travel-items-container {
         flex-direction: column;
     }
+
     .travel-item {
         max-width: unset;
         margin-bottom: 2rem;
         padding: unset;
     }
+
     .travel-img-container img {
         border-radius: 3px 3px 0 0;
         display: block;
     }
+
     .travel-item article {
         margin: auto 1rem;
     }
 
-
     .contact-description p {
         font-size: .8rem;
     }
+
     .contact-form legend{
         padding: unset;
         font-size: 1rem;
     }
+
     .contact-form-input, .contact-form-text {
         width: 100%;
     }
+
     .contact-form-list label {
         text-align: unset;
         margin-bottom: .5rem;
     }
+
     .language-table th {
-        background-color: cadetblue;
-        color: white;
+        background-color: rgb(95, 158, 160);
+        color: rgb(255, 255, 255);
         margin-top: 1rem;
     }
+
     .language-table-container table, thead, tbody, th, td, tr { 
 		display: block; 
     }
+
     .language-table-container thead tr { 
 		position: absolute;
 		top: -9999px;
@@ -653,7 +654,7 @@ th, td {
     
     .language-table-body td, th { 
 		border: none;
-		border-bottom: 1px solid white; 
+		border-bottom: 1px solid rgb(255, 255, 255); 
 		position: relative;
 		padding-left: 50%; 
     }
@@ -687,6 +688,7 @@ th, td {
         align-items: flex-start;
         padding: 1rem 2rem;
     }
+
     .footer-items-container {
         margin: unset;
         padding-top: 1rem;
@@ -700,9 +702,11 @@ th, td {
         margin-right: .5rem;
         font-size: .9rem;
     }
+
     .footer-item a {
         padding: .5rem 0;
     }
+
     .footer-items-container:last-child {
         padding-right:unset
     }
@@ -710,11 +714,13 @@ th, td {
 
 @media (max-width: 440px) {
     body {
-        background-color: cadetblue;
+        background-color: rgb(95, 158, 160);
     }
+
     .page-container {
         padding: 0;
     }
+
     .content-card {
         margin: 0;
         padding: 1rem;
@@ -722,6 +728,7 @@ th, td {
         border-radius: unset;
         box-shadow: unset
     }
+
     .header-container {
         padding: 0;
         margin: 1rem;
@@ -730,51 +737,64 @@ th, td {
         background-position: right;
         background-size: contain;
     }
+
     .menu-container {
         padding-bottom: unset;
     }
+
     .menu-container ul {
         flex-direction: column;
         align-items: unset;
         padding-bottom: unset;
     }
+
     .menu-item {
         padding: .2rem 0;
     }
+
     .menu-item:first-of-type {
         margin-top: .5rem;
     }
+
     .menu-item a {
         padding: 0 .4rem;
         font-size: 1rem;
     }
+
     .menu-item a:hover {
         background-color: unset;
     }
+
     .logo-container {
         display: none;
     }
+
     .writing-overview {
-        background-color: cadetblue;
-        color: white;
+        background-color: rgb(95, 158, 160);
+        color: rgb(255, 255, 255);
         border-radius: 0 0 6px 6px;
     }
+
     .writing-container .photos-copyright {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         margin-left: 0;
         padding: 1rem;
     }
+
     .writing-heading .writing-overview {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         color: rgb(68, 68, 68);
     }
+
     .footer-container {
         height: unset;
     }
+
     .footer-items-container {
         flex-direction: column;
         align-items: unset;
     }
+
     .footer-item {
         padding: .2rem 0;
     }
