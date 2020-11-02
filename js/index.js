@@ -23,12 +23,12 @@ function enableButtonIfAllFieldsFilled() {
 /* VALIDATE INPUTS */
 
 function alertInvalidName () {
-    const nameValidationErrorMsg = 'What is your reaaaaal name? Please submit a valid name!';
+    const nameValidationErrorMsg = 'What is your reaaaaal name? Please submit a valid name! Like Lisa Minelli or John Travolta...';
     alert(nameValidationErrorMsg);
 }
 
 function alertInvalidEmail () {
-    const emailValidationErrorMsg = 'If you want me to get back to you, please submit a valid email address!';
+    const emailValidationErrorMsg = 'If you want me to get back to you, please submit a valid email address! Like hey@you.go or hello@world.now';
     alert(emailValidationErrorMsg);
 }
 
