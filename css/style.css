@@ -757,6 +757,7 @@ th, td {
     .writing-overview {
         background-color: cadetblue;
         color: white;
+        border-radius: 0 0 6px 6px;
     }
     .writing-container .photos-copyright {
         background-color: white;
