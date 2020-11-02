@@ -20,7 +20,7 @@ function enableButtonIfAllFieldsFilled() {
     }
 }
 
-/* VALIDATE INPUTS */
+/* CREATE INVALID INPUT MESSAGES */
 
 function alertInvalidName () {
     const nameValidationErrorMsg = 'What is your reaaaaal name? Please submit a valid name! Like Lisa Minelli or John Travolta...';
@@ -31,6 +31,8 @@ function alertInvalidEmail () {
     const emailValidationErrorMsg = 'If you want me to get back to you, please submit a valid email address! Like hey@you.go or hello@world.now';
     alert(emailValidationErrorMsg);
 }
+
+/* VALIDATE INPUTS */
 
 function validateName() {
     const nameToValidate = nameInput.value;
@@ -64,10 +66,14 @@ function validateEmail() {
     }
 }
 
+/* CLEAR FORM AFTER SUBMIT */
+
 function clearForm () {
     submitButton.disabled = true;
     contactForm.reset();
 }
+
+/* VALIDATE FORM AND SUBMIT FORM */
 
 function validateForm() {
     const nameIsValid = validateName();
