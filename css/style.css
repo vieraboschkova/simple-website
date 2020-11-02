@@ -248,6 +248,7 @@ th, td {
     font-size: .875rem;
     font-style: italic;
     font-weight: 500;
+    line-height: 1.5rem;
 }
 .contact-form label {
     font-weight: 600;
@@ -294,6 +295,7 @@ th, td {
     line-height: 1em;
     background-color: whitesmoke;
     color: rgb(63, 63, 63);
+    resize: vertical;
 }
 
 .contact-form-text::placeholder {
@@ -412,6 +414,11 @@ th, td {
 .writing-heading {
     line-height: 2rem;
 }
+
+.writing-heading h2 {
+    margin-bottom: 1rem;
+}
+
 .writing-img-container {
     overflow: hidden;
     flex: 3;
@@ -459,6 +466,7 @@ th, td {
     width: 75px;
     text-align: center;
     margin-top: .5rem;
+    line-height: 1;
 }
 
 .writing-container .photos-copyright {
