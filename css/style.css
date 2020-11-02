@@ -506,6 +506,19 @@ th, td {
 
 /* MEDIA QUERIES ******************************* */
 
+/* BIG SCREENS */
+
+@media (min-width: 1400px) {
+    .header-container, .footer-container, .page-container {
+        padding-right: calc((100vw - 1400px)/2);
+        padding-left: calc((100vw - 1400px)/2);
+    }
+    .header-container, .footer-container {
+        width: unset;
+    }
+}
+
+/* SMALL SCREENS */
 @media (max-width: 1060px) {
     .page-container {
         display: flex;
