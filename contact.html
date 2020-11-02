@@ -48,9 +48,12 @@
                     <h3 class="contact-heading">Let's get in touch!</h3>
                     <p>If you have any questions, doubts, took a perfect picture of guava, or just had a crazy idea you want to share with me, do not hesitate, leave me a message!</p>
                 </div>
-                <form class="contact-form">
+                <form 
+                    class="contact-form" 
+                    onsubmit="return validateForm()" 
+                    action="">
                     <fieldset>
-                        <legend>Contact Form</legend>
+                        <legend>Contact Form <span class="contact-fields-required">(all fields required)</span></legend>
                         <ul class="contact-form-list">
                             <li class="contact-form-item">
                                 <label for="name">Enter your name: </label>
@@ -61,6 +64,7 @@
                                     name="name" 
                                     placeholder="Enter your name" 
                                     onkeyup="enableButtonIfAllFieldsFilled()"
+                                    minlength="5"
                                     required
                                 >
                             </li>
@@ -73,6 +77,7 @@
                                     name="email" 
                                     placeholder="Give your email"
                                     onkeyup="enableButtonIfAllFieldsFilled()" 
+                                    minlength="5"
                                     required
                                     >
                             </li>
@@ -84,6 +89,7 @@
                                     name="message" 
                                     placeholder="Share your ideas with me"
                                     onkeyup="enableButtonIfAllFieldsFilled()"
+                                    minlength="5"
                                     required
                                 ></textarea>
                             </li>
@@ -92,8 +98,6 @@
                                     type="submit" 
                                     id="contactFormButton" 
                                     class="contact-form-button"
-                                    onsubmit="validateForm()" 
-                                    method="post" 
                                     disabled
                                     >SEND
                                 </button>

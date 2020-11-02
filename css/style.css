@@ -243,6 +243,12 @@ th, td {
     padding: 1rem;
     color: white;
 }
+
+.contact-fields-required {
+    font-size: .875rem;
+    font-style: italic;
+    font-weight: 500;
+}
 .contact-form label {
     font-weight: 600;
     color: white;
@@ -270,7 +276,7 @@ th, td {
 
 .contact-form-input {
     width: 20rem;
-    background-color:#fde3f9;
+    background-color:whitesmoke;
     padding: .1rem .2rem;
     color: rgb(63, 63, 63);
 
@@ -286,7 +292,7 @@ th, td {
     vertical-align: top;
     min-height: 5em;
     line-height: 1em;
-    background-color: #fde3f9;
+    background-color: whitesmoke;
     color: rgb(63, 63, 63);
 }
 
@@ -294,27 +300,36 @@ th, td {
     font-size: .75rem;
 }
 
+/* .contact-form-text:valid {
+   background-color: greenyellow;
+}
+
+.contact-form-text:invalid {
+    background-color: lightcoral;
+ } */
+
 .contact-form-button {
     margin-top: 1rem;
     padding: .5rem 2rem;
-    background-color: #fde3f9;
+    background-color: #f48da1;
     font-size: 1.1rem;
     font-weight: 800;
-    color: rgb(69, 113, 114);
+    color: white;
     border-radius: 5px;
 }
 
 .contact-form-button:disabled {
     background-color: cadetblue;
+    color: whitesmoke;
 }
 
 .contact-form-button:hover:enabled {
-    background-color: rgb(116, 190, 192);
-    color: #fde3f9;
+    background-color: whitesmoke;
+    color: #f48da1;
     transform: scale(1.1);
 }
 
-.contact-form-button:active {
+.contact-form-button:active:enabled {
     position: relative;
     top: 2px;
 }

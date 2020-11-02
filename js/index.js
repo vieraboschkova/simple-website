@@ -1,41 +1,44 @@
 /* GET ELEMENTS */
-
+const nameInput = document.getElementById('contactName');
+const emailInput = document.getElementById('contactEmail');
+const msgInput = document.getElementById('contactMsg');
 const submitButton = document.getElementById('contactFormButton');
 
 /* CHECK IF INPUTS AND TEXTAREA NOT EMPTY TO ENABLE THE BUTTON */
 
 function enableButtonIfAllFieldsFilled() {
-    const nameNotEmpty = document.getElementById('contactName').value !== '';
-    const emailNotEmpty = document.getElementById('contactEmail').value !== '';
-    const msgNotEmpty = document.getElementById('contactMsg').value !== '';
+    const nameNotEmpty = nameInput.value  !== '';
+    const emailNotEmpty = emailInput.value  !== '';
+    const msgNotEmpty = msgInput.value !== '';
 
     if (nameNotEmpty && emailNotEmpty && msgNotEmpty) {
-        console.log('not all empty');
-        console.log(nameNotEmpty, emailNotEmpty, msgNotEmpty)
         submitButton.disabled = false;
-    } else { 
-        console.log('not all filled'); 
-        console.log(
-            nameNotEmpty, emailNotEmpty, msgNotEmpty,
-            document.getElementById('contactName').value,
-            document.getElementById('contactEmail').value,
-            document.getElementById('contactMsg').value
-        ); 
     }
 }
 
 
 /* VALIDATE INPUTS */
 
+function validateName() {
+    const nameRegex = /^(\b[A-Z][a-z]+\s?)+$/;
+    const nameToValidate = nameInput.value;
+    console.log(nameToValidate);
+    console.log(nameRegex.test(nameToValidate))
+    // if (nameToValidate.length < 7) {
+    //     console.log('longer')
+    // }
+}
+
 function validateForm() {
+    validateName();
     console.log('trying to submit');
 }
 
-/* CLEAR FORM ON LOAD */
+/* CLEAR FORM */
 
 function clearContactForm () {
-    document.getElementById('contactName').value = '';
-    document.getElementById('contactEmail').value = '';
-    document.getElementById('contactMsg').value = '';
+    nameInput = '';
+    emailInput.value = '';
+    msgInput.value = '';
 
 }
