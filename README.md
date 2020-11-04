@@ -1,5 +1,6 @@
 # Simple-Website
 Simple Website - Recruitment Task
+
 Live: https://vieraboschkova.github.io/simple-website/
 
 Your task is to implement the simple webpage according to functional
